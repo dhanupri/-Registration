@@ -54,11 +54,8 @@ public class Registration {
         System.out.println("Enter a Password:");
         String password= sc.nextLine();
 
-        /*
-        minimum 8 Characters
-         */
 
-        String password_regex="^(?=.*[A-Z]).{8,}$";
+        String password_regex="^(?=.*[A-Z]).(?=.*[0-9]).{8,}$";
 
         if(!Pattern.matches(password_regex,password)){
             System.out.println("Password doesn't contain minimum 8 character");
