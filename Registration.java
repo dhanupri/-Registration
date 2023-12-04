@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 import java.util.regex.Pattern;
@@ -59,7 +58,7 @@ public class Registration {
         minimum 8 Characters
          */
 
-        String password_regex="^.{8,}$";
+        String password_regex="^(?=.*[A-Z]).{8,}$";
 
         if(!Pattern.matches(password_regex,password)){
             System.out.println("Password doesn't contain minimum 8 character");
