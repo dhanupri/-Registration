@@ -29,6 +29,22 @@ public class Registration {
             System.out.println("Invalid first Name.");
 
         }
+        System.out.println("Enter an Email Id:");
+
+        String email=sc.nextLine();
+
+
+        String email1_regex="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+
+
+
+        if (Pattern.matches(email1_regex, email)) {
+
+            System.out.println("invalid email");
+        }
+        else{
+            System.out.println("invalid email");
+        }
 
 
 
