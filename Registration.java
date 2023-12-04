@@ -38,14 +38,18 @@ public class Registration {
 
 
 
-        if (Pattern.matches(email1_regex, email)) {
+        if (!Pattern.matches(email1_regex, email)) {
+
 
             System.out.println("invalid email");
         }
-        else{
-            System.out.println("invalid email");
-        }
+        System.out.println("Enter Mobile Number");
 
+        String mobile_number= sc.nextLine();
+        String Mobile_number_regex="^\\d{2} \\d{10}$";
+        if(!Pattern.matches(Mobile_number_regex,mobile_number)){
+            System.out.println("Invalid Mobile Number");
+        }
 
 
 
