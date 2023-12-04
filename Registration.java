@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 import java.util.regex.Pattern;
@@ -48,8 +49,26 @@ public class Registration {
         String mobile_number= sc.nextLine();
         String Mobile_number_regex="^\\d{2} \\d{10}$";
         if(!Pattern.matches(Mobile_number_regex,mobile_number)){
-            System.out.println("Invalid Mobile Number");
+            System.out.println(" Invalid Mobile Number");
         }
+
+        System.out.println("Enter a Password:");
+        String password= sc.nextLine();
+
+        /*
+        minimum 8 Characters
+         */
+
+        String password_regex="^.{8,}$";
+
+        if(!Pattern.matches(password_regex,password)){
+            System.out.println("Password doesn't contain minimum 8 character");
+
+        }
+
+
+
+
 
 
 
