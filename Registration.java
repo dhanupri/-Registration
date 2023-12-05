@@ -34,7 +34,7 @@ public class Registration {
         String email=sc.nextLine();
 
 
-        String email1_regex="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+        String email1_regex="^([a-zA-Z0-9_\\+-]+(\\.[a-zA-Z0-9_\\-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z]{2,})+)$";
 
 
 
